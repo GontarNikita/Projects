@@ -1,0 +1,512 @@
+@import "bourbon"
+@import "vars.sass"
+@import "vars.sass"
+@import "fonts.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+
+
+body
+	font-family: "Open Sans", sans-serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+p, a, ul, h2, h3, h4
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+ul, ol
+	list-style-type: none
+
+.container_wrapper
+	width: 100%
+	max-width: 1180px
+	margin: 0 auto
+
+header
+	background: #eeeeee
+.wrapper_justify
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+.wrapper_left, .wrapper_right
+	display: flex
+	align-items: center
+
+.logo_wrapper
+	display: flex
+	flex-direction: row
+	align-items: center
+	flex-wrap: wrap
+	padding: 6px 0
+	&:hover
+		cursor: pointer
+	.logo_img_inner, .logo_text_inner
+		float: left
+		text-transform: uppercase
+	.logo_text_inner
+		margin-left: 16px
+		font-weight: 800
+		font-size: 48px
+		color: #287cc9
+		line-height: 48px
+		.logo_tagline_company
+			font-size: 14.8px
+			line-height: 20px
+			color: #606060
+			span
+				font-size: 16px
+				color: #616161
+.phone_wrapper
+	margin-left: 30px
+	line-height: 20px
+	.phone_inner
+		font-size: 22px
+		font-weight: 600
+		color: #484848
+	.call_me_inner
+		font-size: 14px
+		font-weight: 300
+		margin-top: 8px
+		padding-left: 34px
+		position: relative
+		a
+			color: #287cc9
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&:before
+			content: ""
+			background: url(../img/phone_icon.png)
+			position: absolute
+			top: 0
+			left: 0
+			width: 18px
+			height: 18px
+.phone_messenger_wrapper
+	border-right: 1px solid #cdcdcd
+	padding-right: 19px
+	padding-top: 9px
+	.phone_messenger_inner
+		font-size: 20px
+		line-height: 20px
+		color: #484848
+		font-weight: 400
+		padding-left: 8px
+	.call_me_messenger_inner
+		margin-top: 8px
+		a
+			padding-left: 32px
+			position: relative
+			font-size: 14px
+			font-weight: 300
+			line-height: 20px
+			color: #7d7d7d
+			&:first-child
+				padding-right: 15px
+			&:first-child::before
+				content: ""
+				background: url(../img/viber.png)
+				position: absolute
+				top: 0
+				left: 0
+				width: 23px
+				height: 24px
+			&:last-child::before
+				content: ""
+				background: url(../img/whatsapp.png)
+				position: absolute
+				top: 0
+				left: 0
+				width: 23px
+				height: 24px
+			&:hover
+				text-decoration: underline
+.time_left_wrapper
+	padding-left: 20px
+	font-size: 13px
+	color: #7d7d7d
+	margin-bottom: 17px
+
+.treatment_wrapper
+	position: relative
+	background: url(../img/background_body.png) no-repeat
+	background-size: cover
+	background-position: center center
+	padding: 39px 0 33px
+	&:before
+		content: ""
+		background: rgba(117, 193, 255, 0.8)
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	.treatment_text_wrapper
+		padding: 30px 0
+		background: rgba(12, 120, 165, 0.5)
+		position: relative
+		p
+			color: #eeeeee
+			text-align: center
+			font-size: 48px
+			font-weight: 800
+			line-height: 48px
+		p.rezult
+			font-size: 30px
+			font-weight: 600
+			line-height: 30px
+			span
+				font-size: 50px
+				font-weight: 700
+				line-height: 50px
+				position: relative
+				top: 5px
+		p.money
+			font-size: 30px
+			font-weight: 800
+			line-height: 30px
+			margin-top: 35px
+	.video_form_wrapper
+		position: relative
+		display: flex
+		flex-direction: rosw
+		align-items: center
+		justify-content: space-between
+		margin-top: 32px
+		.video_wrapper, .form_wrapper
+			max-width: 531px
+			width: 100%
+			max-height: 298px
+			box-sizing: border-box
+			img
+				width: 100%
+		.form_wrapper
+			background: #eeeeee
+			padding: 20px 89px 30px
+			text-align: center
+			.form_text
+				p
+					font-weight: 400
+					font-size: 30px
+					color: #707070
+					line-height: 30px
+					span
+						font-weight: 800
+						display: block
+					span.form_text_extra
+						font-size: 18px
+					span.form_text_gift
+						text-transform: uppercase
+						color: #0c78a5
+			form.form_order
+				margin-top: 26px
+				input, button
+					width: 100%
+					display: block
+					box-sizing: border-box
+				input
+					border: 1px solid #dedede
+					height: 37px
+					margin-bottom: 2px
+					padding-left: 18px
+					outline: none
+					&:last-child
+						margin-bottom: 0
+				button
+					margin-top: 8px
+					height: 48px
+					border: 0
+					border-radius: 3px
+					font-size: 15px
+					font-weight: 800
+					text-transform: uppercase
+					color: #000
+					background: #ffc200
+					transition: all 0.75s
+					border-bottom: 4px solid #c69700
+					&:hover
+						cursor: pointer
+						color: #ffc200
+						background: #000
+						border-bottom: 4px solid #000
+.menu_wrapper
+	box-sizing: border-box
+	background: -moz-linear-gradient(top, #3e89cf 52%, #287cc9 52%)
+	background: -webkit-linear-gradient(top, #3e89cf 52%,#287cc9 52%)
+	background: linear-gradient(to bottom, #3e89cf 52%,#287cc9 52%)
+	padding: 3px 0
+	nav
+		ul
+			li
+				display: inline-block
+				border-right: 1px solid #5ea2e2
+				padding: 5px 14px 5px 10px
+				&:first-child
+					padding-left: 0
+				&:last-child
+					border: 0
+				a
+					font-weight: 400
+					font-size: 12px
+					color: #fff
+					text-transform: uppercase
+					padding: 10px 0px
+					line-height: 24px
+					&:hover
+						text-decoration: underline
+	.menu_order_wrapper
+		display: flex
+		flex-direction: row
+		align-items: center
+		.menu_phone
+			font-size: 17px
+			color: #fff
+			line-height: 20px
+	.menu_order_button
+		a
+			font-size: 12px
+			color: #000
+			text-transform: uppercase
+			font-weight: 600
+			padding: 6px 15px
+			background: #ffc200
+			border-radius: 3px
+			border-bottom: 2px solid #c69700
+			box-sizing: border-box
+			margin-left: 12px
+			display: flex
+			transition: all 0.75s
+			&:hover
+				background: #000
+				color: #ffc200
+				border-bottom: 2px solid #000
+.advantages_wrapper
+	padding-top: 39px
+	padding-bottom: 19px
+	background: #f8f8f8
+	.wrapper_justify_advanteges
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-around
+		.advantage_inner
+			text-align: center
+			.img_advantage_holder
+				height: 111px
+				text-align: center
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 1px
+					background: url(../img/line_advantage_yellow.png) no-repeat center center
+			.name_advantage_holder
+				padding: 10px 0
+				font-size: 15px
+				font-weight: 800
+				color: #333333
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 1px
+					background: url(../img/line_advantage_grey.png) no-repeat center center
+			.description_advantage_holder
+				padding-top: 10px
+				font-size: 14px
+				color: #525252
+.products_wrapper
+	padding: 40px 0 60px
+	background: #eeeeee
+.header_block_inner
+	display: flex
+	flex-direction: row
+	align-items: center
+	padding-left: 7px
+	.header_img_holder
+	.header_text_holder
+		text-transform: uppercase
+		margin-left: 50px
+		h3
+			padding-bottom: 24px
+			font-weight: 800
+			font-size: 30px
+			color: #333333
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				height: 1px
+				background: url(../img/sale_header_line.png) no-repeat left center
+		h4
+			padding-top: 19px
+			font-size: 18px
+			color: #626262
+.products_inner
+	margin-top: 59px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.product_holder
+	position: relative
+	width: 100%
+	max-width: 589px
+	background: #f8f8f8
+	box-sizing: border-box
+	padding-top: 30px
+	padding-bottom: 20px
+	margin-bottom: 2px
+	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.15)
+	.company_logo
+		position: absolute
+		top: 15px
+		left: 15px
+	.header_product
+		text-align: center
+		h3
+			font-weight: 800
+			font-size: 20px
+			color: #151515
+		p
+			font-size: 14px
+			color: #4b4b4b
+	.description_product
+		margin-top: 25px
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		.img_product
+			padding-left: 40px
+		.characteristics
+			margin-left: 27px
+			margin-top: 14px
+			.characteristic_text
+				padding-top: 7px
+				padding-left: 20px
+				display: inline-block
+				border-left: 3px solid #287cc9
+				p
+					font-size: 14px
+					line-height: 24px
+					color: #4b4b4b
+				a
+					width: 50%
+					float: left
+					margin-top: 22px
+					border: 1px solid #d2d2d2
+					box-sizing: border-box
+					padding: 8px 0px 8px 20px
+					font-size: 14px
+					color: #646464
+					background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 72%, #e3e3e3 100%)
+					background: -webkit-linear-gradient(top, #ffffff 0%,#f0f0f0 72%,#e3e3e3 100%)
+					background: linear-gradient(to bottom, #ffffff 0%,#f0f0f0 72%,#e3e3e3 100%)
+					transition: all 0.75s
+					line-height: 14px
+					span
+						font-size: 18px
+						color: #287cc9
+						font-weight: 800
+					&:hover
+						background: #ffc200
+						border: 1px solid #ffc200
+						color: #333333
+						cursor: pointer
+					&:hover span
+						color: #333333
+					&.active_price
+						background: #ffc200
+						border: 1px solid #ffc200
+						color: #333333
+					&.active_price span
+						color: #333333
+			.button_buy
+				text-align: center
+				margin-top: 37px
+				a
+					padding: 16px 29px
+					background: #ffc200
+					border-radius: 3px
+					border-bottom: 4px solid #c69700
+					text-transform: uppercase
+					color: #000000
+					font-weight: 800
+					font-size: 15px
+					transition: all 0.75s
+					display: inline-block
+					&:hover
+						color: #ffc200
+						background: #000000
+						border-bottom: 4px solid #000000
+			.characteristic_text_other
+				p.fixed_price
+					color: #646464
+					font-size: 14px
+					line-height: 18px
+					padding: 30px 0 20px 20px
+					span
+						font-size: 18px
+						color: #287cc9
+						font-weight: 800
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media"
