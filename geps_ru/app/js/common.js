@@ -47,3 +47,24 @@ $(".characteristic_text a").on("click", function(e){
 		$(this).addClass("active_price");
 	}
 })
+$(document).ready(function(){
+  $(".certificates_slider").owlCarousel({
+  		autoPlay: 5000,
+		navigation: true,
+		slideSpeed: 300,
+		paginationSpeed: 400,
+		items: 3,
+		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
+  })
+});
+
+$(document).ready(function(){
+  $(".differences_slider").owlCarousel({
+  		autoPlay: 5000,
+		navigation: true,
+		slideSpeed: 300,
+		paginationSpeed: 400,
+		items: 2,
+		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
+  })
+});
