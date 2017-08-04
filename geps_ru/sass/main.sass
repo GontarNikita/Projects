@@ -32,7 +32,8 @@ body textarea:required:valid
 //Custom Styles Here
 
 
-
+*
+    box-sizing: border-box
 body
 	font-family: "Open Sans", sans-serif
 	margin: 0
@@ -580,10 +581,122 @@ header
 
 
 
+//------------------------------------ recomend ------------------------
+.recomend
+	background: #f8f8f8
+	display: block
+	.recomend_wrapper
+		padding: 0px 120px
+		display: flex
+		flex-flow: row wrap
+		justify-content: flex-start
+		.box_holder
+			padding: 35px 30px
+			height: 290px
+			width: 100%
+			position: relative
+			max-width: 310px
+			border: 1px solid #e7e7e7
+			transition: all 0.75s
+			.box_holder_title
+				border-bottom: 1px solid #ccc
+				text-align: center
+				padding-bottom: 25px
+				h4
+					font-size: 18px
+					color: #626262
+					font-weight: 900
+			p
+				padding-top: 20px
+				font-size: 14px
+				color: #626262
+			&:hover
+				.but_get_more
+					display: flex
+			.but_get_more
+				position: absolute
+				top: 0px
+				left: 0px
+				width: 100%
+				height: 100%
+				background: rgba(0,0,0, 0.7)
+				display: none
+				justify-content: center
+				align-items: center
+				transition: all 0.75s
+				a
+					color: #fff
+					font-size: 18px
+					font-weight: bold
+					box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.36)
 
 
+// -------------------------------------  footer ----------------------------
+footer
+	background: #333333
+	padding: 20px 0px
+	ul.footer_inner
+		display: flex
+		justify-content: space-between
+		flex-flow: row wrap
+		align-items: flex-start
+		li
+			width: 100%
+			max-width: 150px
+			text-align: center
+			font-size: 13px
+			color: #cccccc
+			margin-right: 15px
+			.icon_footer
+				background: url(../img/icon_set.png) no-repeat
+				width: 35px
+				height: 25px
+				display: block
+				margin: 10px auto 5px auto
+			.icon_holder
 
+				p:after
+					content: ""
+					border-bottom: 1px solid #ccc
+					width: 67px
+					display: flex
+					justify-content: flex-end
+					height: 1px
+					margin: 10px auto
+			p
+				color: #a2a2a2
+			a
+				color: #ccc
+			&:nth-child(2)
+				.icon_footer
+					background-position: -45px 0px
+			&:nth-child(3)
+				.icon_footer
+					background-position: -105px 0px
+			&:nth-child(4)
+				.icon_footer
+					background-position: -157px 0px
+			&:nth-child(5)
+				.icon_footer
+					background-position: -207px 0px
+			&:nth-child(6)
+				.icon_footer
+					background-position: -263px 0px
 
+		li:last-child
+			max-width: 280px
+.copyright
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	p
+		font-size: 12px
+		color: #909090
+		width: 100%
+		max-width: 515px
+		border-top: 1px solid #ccc
+		margin: 0px auto
+		padding-top: 10px
 
 //ALWAYS END
 @import "media"
