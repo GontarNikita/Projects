@@ -114,7 +114,7 @@ header
 			left: 0
 			width: 18px
 			height: 18px
-.phone_messenger_wrapper
+.phone_messenger_wrapper, .mobile_holder
 	border-right: 1px solid #cdcdcd
 	padding-right: 19px
 	padding-top: 9px
@@ -715,8 +715,8 @@ header
 				color: #ffc200
 				background: #000
 				border-bottom: 4px solid #000
-						
-						
+
+
 
 
 
@@ -745,9 +745,7 @@ header
 				width: 100%
 				max-width: 350px
 				background: rgba(255,255,255, 0.9)
-				height: 80px
-				padding:
-					left: 12px
+				padding: 12px 12px
 				margin-right: 4px
 				.img_holder_del
 					margin-right: 12px
@@ -819,7 +817,17 @@ header
 			&:nth-child(10)
 				margin-right: 0px
 
-
+.mobile_holder, .close_icon,
+a.open-navigation.ssm-toggle-nav.ssm-nav-visible
+	display: none
+.close_icon
+	position: absolute
+	display: none
+	cursor: pointer
+	top: 10px
+	right: 10px
+	font-size: 24px
+	color: #ffc200
 //------------------------------------ recomend ------------------------
 .recomend
 	background: #f8f8f8
@@ -828,7 +836,7 @@ header
 		padding: 0px 120px
 		display: flex
 		flex-flow: row wrap
-		justify-content: flex-start
+		justify-content: center
 		.box_holder
 			padding: 35px 30px
 			height: 290px
