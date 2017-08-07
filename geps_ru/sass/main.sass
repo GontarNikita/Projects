@@ -567,7 +567,92 @@ header
 		.differences_slider_item
 			text-align: center
 
-
+.talk_about_wrapper
+	background: #f8f8f8
+	padding: 37px 0 34px 0
+	.talk_about_inner
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: space-around
+		margin-top: 50px
+		.talk_about_text_holder
+			padding: 47px 60px 0
+			width: 50%
+			h4
+				font-size: 18px
+				font-weight: 700
+				line-height: 18px
+				margin-bottom: 25px
+			p
+				font-size: 15px
+				color: #686868
+				margin-bottom: 20px
+		.talk_about_video_holder
+			width: 100%
+			max-width: 460px
+.stage_wrapper
+	padding-top: 26px
+	padding-bottom: 50px
+	background: #eeeeee
+	.stages_inner
+		padding: 0 64px
+		margin-top: 47px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-around
+		.stage_holder
+			width: 100%
+			max-width: 198px
+			background: #f8f8f8
+			text-align: center
+			padding: 15px 4px 4px
+			position: relative
+			&:last-child::before
+				background: none
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: -11px
+				width: 11px
+				height: 106px
+				background: url(../img/stage_icon_left.png) no-repeat
+			.stage_header
+				font-size: 15px
+				font-weight: 800
+				color: #333333
+				padding-bottom: 12px
+				position: relative
+				margin-bottom: 10px
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 1px
+					background: url(../img/stage_line.png) no-repeat center center
+			.stage_button_consultant
+				margin-top: 10px
+				a
+					font-weight: 800
+					font-size: 11px
+					text-transform: uppercase
+					color: #000
+					width: 100%
+					display: inline-block
+					background: #ffc200
+					border-radius: 3px
+					border-bottom: 3px solid #c69700
+					padding: 10px 0
+					transition: all 0.75s
+					&:hover
+						background: #000
+						border-bottom: 3px solid #000
+						color: #ffc200
 
 
 
