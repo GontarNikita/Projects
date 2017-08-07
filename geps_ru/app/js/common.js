@@ -66,4 +66,12 @@ $(document).ready(function(){
 		items: 2,
 		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
   })
+	$(".slider_wrapper").owlCarousel({
+  		autoPlay: 5000,
+		navigation: true,
+		slideSpeed: 300,
+		paginationSpeed: 400,
+		items: 1,
+		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
+  })
 });
