@@ -573,13 +573,54 @@ header
 	padding-top: 36px
 	padding-bottom: 50px
 	.differences_slider
-		margin-top: 50px
-		padding: 0 127px
+		margin-top: 38px
+		
 		box-sizing: border-box
 		display: flex
 		justify-content: space-around
-		.differences_slider_item
-			text-align: center
+		.owl-wrapper-outer
+		.differences_slider_items
+			padding: 0 194px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			.item_left
+				text-align: left
+			.item_right
+				text-align: right
+			.differences_slider_item
+				position: relative
+				padding-top: 78px
+			.differences_slider_inner
+				position: absolute
+				top: 0
+				left: 0
+				display: flex
+				align-items: center
+				.circle
+					width: 111px
+					height: 111px
+					border: 4px solid #287cc9
+					border-radius: 50%
+					position: relative
+					img
+						width: 100%
+					&:before
+						content: ""
+						position: absolute
+						right: 0
+						bottom: 0
+						width: 95px
+						height: 95px
+						background: url(../img/line_slider_1.png) no-repeat center
+				.circle_text
+					font-size: 14px
+					color: #4c4c4c
+					font-weight: 700
+					text-transform: uppercase
+					padding-left: 15px
+					border-bottom: 1px solid #4c4c4c
+					margin-left: 2px
 
 .talk_about_wrapper
 	background: #f8f8f8

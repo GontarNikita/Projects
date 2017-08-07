@@ -63,7 +63,7 @@ $(document).ready(function () {
 		navigation: true,
 		slideSpeed: 300,
 		paginationSpeed: 400,
-		items: 2,
+		items: 1,
 		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
 	})
 	$(".slider_wrapper").owlCarousel({
