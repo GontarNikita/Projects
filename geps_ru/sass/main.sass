@@ -554,6 +554,15 @@ header
 .prev_button, .next_button
 	&:hover
 		filter: contrast(150%)
+
+
+.circle_text
+	font-size: 14px
+	color: #4c4c4c
+	font-weight: 700
+	text-decoration: underline
+	margin-left: 2px
+	text-transform: uppercase
 .differences_wrapper
 	background: #eeeeee
 	padding-top: 45px
@@ -566,7 +575,7 @@ header
 		justify-content: space-around
 		.owl-wrapper-outer
 		.differences_slider_items
-			padding: 0 194px
+			padding: 0 160px
 			display: flex
 			flex-wrap: wrap
 			justify-content: space-around
@@ -577,15 +586,16 @@ header
 			.differences_slider_item
 				position: relative
 				padding-top: 78px
-			.differences_slider_inner
+				padding-bottom: 123px
+			.differences_slider_desc_top
 				position: absolute
-				top: 0
-				left: 0
+				top: 0px
+				left: -145px
 				display: flex
 				align-items: center
 				.circle
-					width: 111px
-					height: 111px
+					width: 121px
+					height: 121px
 					border: 4px solid #287cc9
 					border-radius: 50%
 					position: relative
@@ -594,19 +604,92 @@ header
 					&:before
 						content: ""
 						position: absolute
-						right: 0
-						bottom: 0
-						width: 95px
-						height: 95px
-						background: url(../img/line_slider_1.png) no-repeat center
+						right: -32px
+						bottom: -92px
+						width: 5px
+						height: 124px
+						background: #287cc9
+						transform: rotate(-45deg)
 				.circle_text
-					font-size: 14px
-					color: #4c4c4c
-					font-weight: 700
-					text-transform: uppercase
 					padding-left: 15px
-					border-bottom: 1px solid #4c4c4c
-					margin-left: 2px
+			.differences_slider_desc_bottom
+				position: absolute
+				left: -82px
+				bottom: 59px
+				.circle
+					width: 119px
+					height: 119px
+					border: 4px solid #287cc9
+					border-radius: 50%
+					position: relative
+					background: inherit
+					margin: 0 0 0 auto
+					right: 44px
+					margin-bottom: 59px
+					&:before
+						content: ""
+						position: absolute
+						right: 50%
+						transform: translateX(-50%)
+						bottom: -51px
+						width: 5px
+						height: 48px
+						background: #287cc9
+			.differences_slider_desc_top_2
+				position: absolute
+				top: 12px
+				right: -73px
+				padding-left: 73px
+				display: flex
+				align-items: center
+				flex-direction: column
+				flex-flow: wrap-reverse
+				.circle
+					width: 74px
+					height: 74px
+					border: 4px solid #287cc9
+					border-radius: 50%
+					position: relative
+					background: inherit
+					margin: 0 auto
+					margin-top: 255px
+					&:before
+						content: ""
+						position: absolute
+						right: 49%
+						bottom: 69px
+						width: 5px
+						height: 239px
+						background: #287cc9
+				.circle_text
+					text-align: center
+			.differences_slider_desc_bottom_2
+				position: absolute
+				right: -97px
+				bottom: 54px
+				.circle
+					width: 45px
+					height: 45px
+					border: 4px solid #287cc9
+					border-radius: 50%
+					position: relative
+					background: inherit
+					margin: 0 0px 0 auto
+					right: 134px
+					margin-bottom: 129px
+					&:before
+						content: ""
+						position: absolute
+						right: 48%
+						top: 40px
+						width: 5px
+						height: 103px
+						background: #287cc9
+				.circle_text
+					text-align: center
+
+
+
 
 .talk_about_wrapper
 	background: #f8f8f8
