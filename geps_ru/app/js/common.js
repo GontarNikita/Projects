@@ -57,7 +57,7 @@ $(document).ready(function () {
 		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
 	})
 });
-
+$(".fancybox").fancybox();
 $(document).ready(function () {
 	$(".differences_slider").owlCarousel({
 		navigation: true,
