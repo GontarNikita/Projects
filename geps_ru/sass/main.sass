@@ -1150,5 +1150,430 @@ footer
 		margin: 0px auto
 		padding-top: 10px
 
+
+
+/*-------------Page feedback------------------*/
+
+.video_reviwes_page
+	margin: 0
+	padding: 40px 0 107px 0
+	counter-reset: countreset
+	.header_block_inner
+		padding-left: 18px
+		.header_text_holder
+			h3
+				padding: 0
+				&:before
+					background: none
+	.slider_delivery
+		.slider_wrapper
+			margin: 43px 0 0
+		.owl-pagination
+			position: absolute
+			bottom: -58px
+			left: 0
+			width: 100%
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			.owl-page
+				width: 24px
+				height: 24px
+				border-radius: 50%
+				position: relative
+				transition: all 0.75s
+				&:before
+					counter-increment: countreset
+					content: counter(countreset)
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					font-weight: 800
+					font-size: 14px
+					color: #464646
+					line-height: 14px
+				&:hover
+					background: #ffc200
+			.active
+				background: #ffc200
+
+.recomend_page
+	padding: 40px 0 99px 0
+	background: #eeeeee
+	counter-reset: countr
+	.header_block_inner
+		padding-left: 18px
+		.header_text_holder
+			h3
+				padding: 0
+				&:before
+					background: none
+	.recomend_wrapper
+		margin-top: 37px
+		.box_holder
+			background: #f8f8f8
+	.slider_recomend_page
+		.recomend_wrapper
+			padding: 0 40px
+		.owl-pagination
+			position: absolute
+			bottom: -58px
+			left: 0
+			width: 100%
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			.owl-page
+				width: 24px
+				height: 24px
+				border-radius: 50%
+				position: relative
+				transition: all 0.75s
+				&:before
+					counter-increment: countr
+					content: counter(countr)
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					font-weight: 800
+					font-size: 14px
+					color: #464646
+					line-height: 14px
+				&:hover
+					background: #ffc200
+			.active
+				background: #ffc200
+.add_feedback
+	padding: 35px 0 65px 0
+	background: #f8f8f8
+	counter-reset: countr
+	.header_block_inner
+		padding-left: 18px
+		.header_text_holder
+			h3
+				padding: 0
+				&:before
+					background: none
+	.form_add_feedback_wrapper
+		margin: 0 128px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		form
+			input, label, textarea
+				display: block
+			input[type=file]
+				display: none
+			input[type=text]
+				height: 39px
+				width: 258px
+				text-indent: 15px
+				border: 1px solid #dbdbdb
+				&:first-child
+					margin-bottom: 5px
+				&::-webkit-input-placeholder
+					color: #acacac
+					font-size: 14px
+				&:-moz-placeholder
+					color: #acacac
+					font-size: 14px
+				&::-moz-placeholder
+					color: #acacac
+					font-size: 14px
+				&:-ms-input-placeholder
+					color: #acacac
+					font-size: 14px
+			textarea
+				width: 404px
+				height: 83px
+				border: 1px solid #dbdbdb
+				text-indent: 15px
+				resize: none
+				margin-left: 5px
+				font-family: "Open Sans", sans-serif
+				font: 14px "Open Sans"
+				padding: 13px 14px
+				&::-webkit-input-placeholder
+					color: #acacac
+					font-size: 14px
+					font-family: "Open Sans", sans-serif
+				&:-moz-placeholder
+					color: #acacac
+					font-size: 14px
+					font-family: "Open Sans", sans-serif
+				&::-moz-placeholder
+					color: #acacac
+					font-size: 14px
+					font-family: "Open Sans", sans-serif
+				&:-ms-input-placeholder
+					color: #acacac
+					font-size: 14px
+					font-family: "Open Sans", sans-serif
+			label
+				display: inline-block
+				margin-right: 26px
+				margin-top: 13px
+				color: #287cc9
+				font-size: 14px
+				line-height: 14px
+				font-weight: 600
+				position: relative
+				padding-left: 32px
+				&:before
+					content: ""
+					position: absolute
+					top: 0
+					left: 0
+					width: 20px
+					height: 15px
+					background: url(../img/add_file_icon.png) no-repeat center center
+				&:last-child::before
+					background: url(../img/add_video_icon.png) no-repeat center center
+				&:hover
+					cursor: pointer
+					text-decoration: underline
+			.field_contacts, .field_text
+				float: left
+			.field_files
+				clear: both
+		.field_button
+			button
+				border: 0
+				background: #ffc200
+				border-radius: 3px
+				border-bottom: 4px solid #c69700
+				padding: 16px 0
+				width: 190px
+				text-transform: uppercase
+				font-weight: 800
+				font-size: 15px
+				margin-top: 12px
+				transition: all 0.75s
+				&:hover
+					cursor: pointer
+					opacity: 0.7
+.back_to_main_wrapper
+	padding: 10px 0 11px 0
+	background: #eeeeee
+	text-align: center
+	a
+		font-size: 15px
+		font-weight: 800
+		color: #000
+		background: #ffc200
+		border-bottom: 4px solid #c69700
+		padding: 16px
+		display: inline-block
+		border-radius: 3px
+		text-transform: uppercase
+		transition: all 0.75s
+		&:hover
+			opacity: 0.7
+
+
+
+/*--------------------Страница благодарности------------------*/
+.gratitude_wrapper
+	padding: 17px 0 0
+	background: url(../img/background_gratitude.png) no-repeat center center
+	background-size: cover
+	.gratitude_inner
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+	.gratitude_img_holder
+		padding-left: 15px
+		display: inherit
+	.gratitude_text_holder
+		border-left: 4px solid #287cc9
+		padding: 5px 0 9px 24px
+		margin-left: 50px
+		margin-bottom: 80px
+		h3
+			font-size: 40px
+			font-weight: 800
+			color: #333333
+			line-height: 40px
+			margin-bottom: 31px
+		p
+			font-size: 24px
+			font-weight: 300
+			color: #333333
+			line-height: 38px
+			text-transform: uppercase
+			span
+				font-weight: 700
+.social_wrapper
+	padding: 45px 0 66px 0
+	background: #f8f8f8
+	.social_inner
+		padding: 0 64px
+		margin-top: 44px
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+	.header_block_inner
+		.header_text_holder
+			h3
+				&:before
+					background: url(../img/gratitude_header_line.png) no-repeat left center
+
+
+
+
+/*--------------------Страница Блог------------------*/
+.articles_wrapper
+	padding: 60px 0 190px
+	background: #f8f8f8
+
+.container_wrapper_with_sidebar
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	align-items: flex-start
+	.main_content_wrapper
+		max-width: 906px
+		width: 100%
+		padding-right: 29px
+		.article_wrapper
+			padding-top: 60px
+			.article
+				padding-bottom: 18px
+				border-bottom: 1px solid #c8c8c8
+				position: relative
+				margin-bottom: 27px
+				.article_date
+					font-size: 14px
+					line-height: 14px
+					color: #919191
+					margin-bottom: 16px
+				.article_miniature
+					max-width: 358px
+					width: 100%
+					float: left
+					display: table
+					img
+						width: 100%
+				.article_content
+					display: table
+					padding-left: 27px
+					h3
+						font-size: 18px
+						font-weight: 700
+						color: #333333
+						margin: 0px 0 23px
+					a
+						&:hover
+							text-decoration: underline
+					p
+						font-size: 14px
+						color: #565656
+						line-height: 20px
+						a
+							font-weight: 700
+							color: #287cc9
+							margin-left: 15px
+				.article_count_comments
+					position: absolute
+					top: -5px
+					left: 100px
+					p
+						padding-left: 32px
+						font-size: 14px
+						line-height: 24px
+						color: #757575
+						position: relative
+						span
+							font-weight: 700
+						&:before
+							content: ""
+							position: absolute
+							top: 50%
+							left: 0
+							transform: translateY(-50%)
+							width: 18px
+							height: 16px
+							background: url(../img/comment_icon.png) no-repeat center center
+				&:last-child
+					margin-bottom: 0
+			.first_article
+				.article_count_comments
+					margin-top: 23px
+					position: relative
+					top: 0
+					left: 0
+				.article_miniature
+					max-width: 100%
+					width: 100%
+					display: block
+					float: none
+					img
+						width: auto
+				.article_content
+					display: block
+					padding-left: 0px
+					h3
+						margin: 28px 0 23px
+	.sidebar_wrapper
+		max-width: 274px;
+		width: 100%;
+		word-wrap: break-word
+		.search_widget_wrapper
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			margin-bottom: 42px
+			input
+				height: 32px
+				border: 1px solid #dbdbdb
+				text-indent: 15px
+				max-width: 230px
+				width: 100%
+			button
+				height: 32px
+				width: 18px
+				background: url(../img/search_icon.png) no-repeat center center
+				border: 0
+				padding: 0
+				margin-left: 11px
+				transition: all 0.75px
+				&:hover
+					cursor: pointer
+					transform: scale(1.1)
+		.tags_widget_wrapper
+			h4
+				text-align: center
+				font-weight: 800
+				font-size: 14px
+				text-transform: uppercase
+				line-height: 14px
+				padding-bottom: 15px
+				position: relative
+				margin-bottom: 21px
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 1px
+					background: url(../img/widget_header_line.png) no-repeat center center
+			.tags
+				a
+					font-size: 14px
+					color: #a2a2a2
+					line-height: 24px
+					padding-right: 10px
+					&:hover
+						text-decoration: underline
+
 //ALWAYS END
 @import "media"
