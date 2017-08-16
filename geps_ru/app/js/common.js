@@ -66,7 +66,7 @@ $(document).ready(function () {
 });
 $(".fancybox").fancybox();
 
-var _id = $('.menu_wrapper');
+/*var _id = $('.menu_wrapper');
 	var _hid = _id.offset().top;
 	$(window).scroll(function(){
 		if( $(window).scrollTop() > _hid){
@@ -75,7 +75,7 @@ var _id = $('.menu_wrapper');
 		if ($(window).scrollTop() <_hid) {
 			$(_id).removeClass('fixed_nav');
 		}
-	});
+	});*/
 $(document).ready(function () {
 	$(".differences_slider").owlCarousel({
 		navigation: true,
@@ -115,6 +115,50 @@ $(document).ready(function () {
 		navigation: true,
 		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
 	})
+
+
+
+	$(document).ready(function () {
+		var windowWidth = $(window).width();
+	if (windowWidth < 480) {
+		$('#slider_vertical').lightSlider({
+			gallery: true,
+			item: 1,
+			vertical: false,
+			verticalHeight: 400,
+			vThumbWidth: 78,
+			thumbItem: 4,
+			thumbMargin: 0,
+			keyPress: true,
+			slideMargin: 0
+		});
+	}
+	else {
+		$('#slider_vertical').lightSlider({
+			gallery: true,
+			item: 1,
+			vertical: true,
+			verticalHeight: 400,
+			vThumbWidth: 78,
+			thumbItem: 4,
+			thumbMargin: 0,
+			keyPress: true,
+			slideMargin: 0
+		});
+	}
+
+	});
+	// add event to buttons in tovar slider
+	$(".but_prev").click(function () {
+		$(".lSPrev").trigger("click");
+		update($(".lSPrev"));
+	});
+	$(".but_next").click(function () {
+		$(".lSNext").trigger("click");
+		update($(".lSNext"));
+	});
+
+
 
 	// mobile mnu
 

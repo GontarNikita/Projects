@@ -1793,6 +1793,213 @@ footer
 
 						
 
+/*------------------------Page Product-----------------------*/
+.product_wrapper
+	padding: 70px 0 117px
+	background: #f8f8f8
+.tovar_slider
+	width: 100%
+	max-width: 650px
+	position: relative
+	margin-top: 75px
+.lSSlideOuter.vertical .lSGallery
+	position: absolute !important
+	right: 0
+	top: 0
+	margin: 35px 0px !important
+	li
+		height: 78px !important
+		margin-bottom: 5px !important
+		text-align: center
+		border: 1px solid #b2b2b2
+		padding: 5px
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover
+	border-radius: 0px !important
+	border: 1px solid #287cc9
+.lSSlideOuter .lSPager.lSGallery img
+	height: 66px !important
+	margin: 0 auto
+.lSAction
+	display: none !important
+.buts_wrap
+	display: block
+	position: absolute
+	right: 0px
+	top: 0px
+	pointer-events: none
+	height: 100%
+	width: 78px
+	border-right: 3px solid #287cc9
+	padding-right: 16px
+	box-sizing: content-box
+	.but_next, .but_prev
+		background-position: 0px 0px
+		background: url(../img/next_slide_product.png) no-repeat
+		display: block
+		width: 15px
+		cursor: pointer
+		pointer-events: visible
+		height: 9px
+	.but_next
+		top: 0px
+	.but_prev
+		bottom: 0px
+		background: url(../img/prew_slide_product.png) no-repeat
+	.buts_inner
+		width: 100%
+		position: absolute
+		height: 35px
+		background: #f8f8f8
+		display: flex
+		justify-content: center
+		align-items: center
+	.buts_inner.top
+		top: 0px
+		padding-right: 16px
+	.buts_inner.bottom
+		bottom: 0px
+		padding-right: 16px
+.lSSlideOuter.vertical
+	padding-left: 80px !important
+	padding-right: 0 !important
+.lSSlideOuter.vertical .lSGallery
+	position: absolute
+	left: 0 !important
+	top: 0
+.buts_wrap
+	position: absolute
+	left: 0
+	top: 0
+.lSSlideOuter.vertical .lightSlider>*
+	text-align: center
+
+
+.product_inner
+	display: flex
+	flex-direction: row
+	align-items: flex-start
+.order_holder
+	.order_title
+		h2
+			font-size: 20px
+			font-weight: 800
+			color: #151515
+			span
+				font-size: 14px
+				font-weight: normal
+				color: #4b4b4b
+	form
+		.price_product
+			padding: 10px 19px 17px
+			background: #fff
+			margin-top: 25px
+			.price
+				display: flex
+				align-items: center
+				justify-content: space-between
+				font-size: 14px
+				color: #696969
+				p
+					display: flex
+					align-items: center
+					span.count_price
+						font-size: 30px
+						font-weight: 800
+						color: #287cc9
+						line-height: 24px
+						margin-left: 18px
+			.price_receipt
+				padding-bottom: 18px
+				border-bottom: 1px solid #e4e4e4
+				margin-bottom: 15px
+		.client_info_wrapper
+			padding: 14px 0 0 16px
+			border-left: 3px solid #ffc200
+			margin-top: 40px
+			label, input
+				display: block
+			label
+				font-size: 14px
+				color: #696969
+				margin-bottom: 12px
+				line-height: 14px
+			input
+				width: 100%
+				height: 37px
+				border: 1px solid #dedede
+				margin-bottom: 15px
+				text-indent: 15px
+				&:last-child
+					margin-bottom: 0
+		.input_send
+			input
+				border: 0
+				margin-top: 30px
+				color: #000
+				text-transform: uppercase
+				font-size: 15px
+				font-weight: 800
+				background: #ffc200
+				max-width: 185px
+				width: 100%
+				padding: 16px 0
+				border-radius: 3px
+				border-bottom: 4px solid #c69700
+				&:hover
+					cursor: pointer
+					opacity: 0.7
+
+
+
+.product_description
+	width: 100%
+	background: #fff
+	padding: 50px 64px
+	margin-top: 50px
+	p
+		font-size: 15px
+		color: #818181
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+
+.radio_b
+	vertical-align: top
+	width: 27px
+	height: 27px
+.radio_b + label
+	cursor: pointer
+.radio_b:not(checked)
+	position: absolute
+	opacity: 0
+.radio_b:not(checked) + label
+	position: relative
+	padding: 5px 0 0 37px
+.radio_b:not(checked) + label:before
+	content: '';
+	position: absolute
+	top: 0px
+	left: 0
+	width: 27px
+	height: 27px
+	background: #fff
+	border: 1px solid #cacaca
+.radio_b:not(checked) + label:after
+	content: ''
+	position: absolute
+	top: 6px
+	left: 6px
+	width: 16px
+	height: 16px
+	background: #FFF
+	transition: all .2s
+.radio_b:checked + label:before
+	background: #fff
+.radio_b:checked + label:after
+	background: url(../img/radio_checked.png) no-repeat
+
+
+
 
 
 //ALWAYS END
