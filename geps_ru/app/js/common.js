@@ -159,6 +159,25 @@ $(document).ready(function () {
 	});
 
 
+/*--------------popup start---------------------*/
+            $('.fancyVideo').fancybox({
+                width: 400,
+                height: 300,
+                type: 'iframe'
+            });
+
+            $(".box_holder_hide").fancybox({
+	            'titlePosition'     : 'inside',
+	            'transitionIn'      : 'none',
+	            'transitionOut'     : 'none'
+        	});
+        	$(".box_review_show").fancybox({
+	            'titlePosition'     : 'inside',
+	            'transitionIn'      : 'none',
+	            'transitionOut'     : 'none'
+        	});
+
+/*--------------popup end---------------------*/
 
 	// mobile mnu
 
